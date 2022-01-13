@@ -1,0 +1,48 @@
+<main>
+  <div class="login-screen">
+    <div class="content">
+      <div class="back">
+        <img
+          src="../../../assets/back.png"
+          alt="back arrow"
+          routerLink="/dashboard"
+        />
+        <h1><span>Zero</span>Depression</h1>
+      </div>
+
+      <div class="dashboard">
+        <p>New Chats</p>
+        <!-- implement using map -->
+        <div class="chat-cards">
+          <!-- card start -->
+          <div class="card">
+            <img src="../../../assets/smiley.png" alt="smiles" />
+
+            <h3>Bayus</h3>
+            <h3 id="accept" (click)="showPopUp()">Accept</h3>
+          </div>
+          <!-- card start -->
+          <div class="card">
+            <img src="../../../assets/smiley.png" alt="smiles" />
+            <h3>Bayus</h3>
+            <h3 id="accept" (click)="showPopUp()">Accept</h3>
+          </div>
+          <!-- card start -->
+          <div class="card">
+            <img src="../../../assets/smiley.png" alt="smiles" />
+
+            <h3>Bayus</h3>
+            <h3 id="accepted">Accepted</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" *ngIf="popUp">
+    <div class="popup-content">
+      <h2>You will now be directed to the chat interface</h2>
+      <img src="../../../assets/popup.png" alt="popbg" />
+    </div>
+  </div>
+</main>
