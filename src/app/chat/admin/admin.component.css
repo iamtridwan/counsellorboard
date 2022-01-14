@@ -19,6 +19,7 @@ main .back img {
   width: 10%;
   height: 10%;
   margin-right: 30px;
+  transform: translateY(0);
 }
 
 main .back h1 {
