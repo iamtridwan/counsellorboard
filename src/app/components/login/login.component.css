@@ -154,6 +154,7 @@ section h1 .circle {
 
 .login-screen .content form .form-group {
   margin: 20px 0;
+  position: relative;
 }
 
 .login-screen .content form .form-group label {
@@ -193,9 +194,18 @@ section h1 .circle {
   margin-top: -15px;
   cursor: pointer;
 }
-.error{
-    color: #ff0024;
-    
+
+.login-screen .content form .form-group img {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  opacity: 0.5;
+}
+
+.error {
+  color: #ff0024;
 }
 .login-screen .content form button {
   background-color: #ffa500;
@@ -220,4 +230,3 @@ section h1 .circle {
   font-weight: 500;
   cursor: pointer;
 }
-
